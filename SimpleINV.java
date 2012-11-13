@@ -25,8 +25,8 @@ public class SimpleINV extends JavaPlugin {
 	     this.logger.info(pdfFile.getName() + " Version " + pdfFile.getVersion() +  " Has Been Enabled");
 	 	 }
 	 
-	 public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
-		    Player player = (Player) sender;
+	 public boolean onCommand(CommandSender player, Command cmd, String commandLabel, String[] args){
+		    
 		   if(commandLabel.equalsIgnoreCase("simpleinv")){
 			   player.getPlayer().getInventory().contains(1);
 		   }

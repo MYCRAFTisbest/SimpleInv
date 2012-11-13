@@ -23,7 +23,17 @@ public class SimpleINV extends JavaPlugin {
 	 public void onEnable() {
 		 PluginDescriptionFile pdfFile = this.getDescription();
 	     this.logger.info(pdfFile.getName() + " Version " + pdfFile.getVersion() +  " Has Been Enabled");
+	 	 }
+	 
+	 public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
+		    Player player = (Player) sender;
+		   if(commandLabel.equalsIgnoreCase("simpleinv")){
+			   player.getPlayer().getInventory().contains(1);
+		   }
+		return false;
 	 }
+}
+
 	
 	
 	

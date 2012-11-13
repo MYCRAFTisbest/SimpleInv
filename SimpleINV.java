@@ -28,7 +28,7 @@ public class SimpleINV extends JavaPlugin {
 	 public boolean onCommand(CommandSender player, Command cmd, String commandLabel, String[] args){
 		    
 		   if(commandLabel.equalsIgnoreCase("simpleinv")){
-			   player.getPlayer().getInventory().contains(1);
+		 if (player.getPlayer().getInventory().contains(1));
 		   }
 		return false;
 	 }
